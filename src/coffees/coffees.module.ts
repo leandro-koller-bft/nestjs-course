@@ -19,8 +19,7 @@ import { Connection } from 'typeorm';
       Promise<string[]> => {
         // const coffeeBrands = await connection.query('SELECT * ...');
         const coffeeBrands = await Promise.resolve(['buddy brew', 'nescafe']);
-        console.log('[!] Async factory');
-        
+
         return coffeeBrands;
       },
     },
