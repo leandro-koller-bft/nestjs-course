@@ -1,7 +1,7 @@
-import { Injectable } from '@nestjs/common';
-import { CoffeesService } from 'src/coffees/coffees.service';
+// import { Injectable } from '@nestjs/common';
+// import { CoffeesService } from 'src/coffees/coffees.service';
 
-@Injectable()
-export class CoffeeRatingService {
-  constructor(private readonly coffesService: CoffeesService) {}
-}
+// @Injectable()
+// export class CoffeeRatingService {
+//   constructor(private readonly coffesService: CoffeesService) {}
+// }
