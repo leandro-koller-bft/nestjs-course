@@ -10,6 +10,7 @@ import { CoffeesModule } from './coffees/coffees.module';
 // import Joi from 'joi';
 import appConfig from './config/app.config';
 import { APP_PIPE } from '@nestjs/core';
+import { CommonModule } from './common/common.module';
 
 @Module({
   imports: [
@@ -23,6 +24,7 @@ import { APP_PIPE } from '@nestjs/core';
     }),
     CoffeesModule,
     TypeOrmModule.forRoot(appConfig().database as TypeOrmModuleOptions),
+    CommonModule,
     // CoffeeRatingModule,
     // DatabaseModule,
   ],
